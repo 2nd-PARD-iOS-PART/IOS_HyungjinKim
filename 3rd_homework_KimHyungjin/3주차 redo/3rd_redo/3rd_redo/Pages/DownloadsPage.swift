@@ -11,19 +11,67 @@ class DownloadsPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.addSubview(downloadImage)
+        view.addSubview(downloadText)
+        view.addSubview(downloadButton)
+        configureConstraints()
     }
     
+    private let downloadImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "Download")
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    private let downloadText: UILabel = {
+        let text = UILabel()
+        text.text = "Movies and TV shows that you\ndownload appear here"
+        text.font = UIFont.boldSystemFont(ofSize: 20)
+        text.textColor = .systemGray
+        text.textAlignment = .center
+        text.numberOfLines = 0
+        text.translatesAutoresizingMaskIntoConstraints = false
 
-    /*
-    // MARK: - Navigation
+        return text
+    }()
+    
+    private let downloadButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .white
+        button.setTitle("Find Something to Download", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.cornerRadius = 8
+        button.layer.masksToBounds = true
+        return button
+    }()
+    
+    func configureConstraints(){
+        let downloadButtonConstraints = [
+            downloadButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            downloadButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 650),
+            downloadButton.widthAnchor.constraint(equalToConstant: 300),
+            downloadButton.heightAnchor.constraint(equalToConstant: 50)
+        ]
+        
+        let downloadTextConstraints = [
+            downloadText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            downloadText.topAnchor.constraint(equalTo: downloadImage.bottomAnchor, constant: 30),
+        ]
+        let downloadImageConstraints = [
+            downloadImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            downloadText.topAnchor.constraint(equalTo: view.topAnchor, constant: 450),
+            downloadImage.widthAnchor.constraint(equalToConstant: 300),
+            downloadImage.heightAnchor.constraint(equalToConstant: 200),
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        ]
+        
+        NSLayoutConstraint.activate(downloadButtonConstraints)
+        NSLayoutConstraint.activate(downloadTextConstraints)
+        NSLayoutConstraint.activate(downloadImageConstraints)
+
     }
-    */
 
 }

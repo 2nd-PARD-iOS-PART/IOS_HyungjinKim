@@ -23,6 +23,7 @@
 		CAC35AB92AD0DCF300F7DF6B /* ComingSoonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35AB82AD0DCF300F7DF6B /* ComingSoonPage.swift */; };
 		CAC35ABB2AD0DD0800F7DF6B /* DownloadsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35ABA2AD0DD0800F7DF6B /* DownloadsPage.swift */; };
 		CAC35ABD2AD0DD1700F7DF6B /* MorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35ABC2AD0DD1700F7DF6B /* MorePage.swift */; };
+		CAC35AC02AD0F76400F7DF6B /* Model2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35ABF2AD0F76400F7DF6B /* Model2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CAC35AB82AD0DCF300F7DF6B /* ComingSoonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonPage.swift; sourceTree = "<group>"; };
 		CAC35ABA2AD0DD0800F7DF6B /* DownloadsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsPage.swift; sourceTree = "<group>"; };
 		CAC35ABC2AD0DD1700F7DF6B /* MorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePage.swift; sourceTree = "<group>"; };
+		CAC35ABF2AD0F76400F7DF6B /* Model2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC35AAC2AD0D5EF00F7DF6B /* Model.swift */,
+				CAC35ABF2AD0F76400F7DF6B /* Model2.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC35AA92AD0D58700F7DF6B /* CollectionInTabelViewCell.swift in Sources */,
+				CAC35AC02AD0F76400F7DF6B /* Model2.swift in Sources */,
 				CAC35AAB2AD0D5C200F7DF6B /* MyCollectionViewCell.swift in Sources */,
 				CAC35AB92AD0DCF300F7DF6B /* ComingSoonPage.swift in Sources */,
 				CAC35AB32AD0DA9200F7DF6B /* MainTapBar.swift in Sources */,
