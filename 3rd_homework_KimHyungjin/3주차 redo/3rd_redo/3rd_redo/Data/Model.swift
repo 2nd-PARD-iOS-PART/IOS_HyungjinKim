@@ -40,7 +40,7 @@ extension Model{
             Model(title: "Europe movie", image: "Movie Card-9"),
             Model(title: "Europe movie", image: "Movie Card-10"),
             Model(title: "Europe movie", image: "Movie Card-11"),
-            Model(title: "Europe movie", image: "Movie Card-12"),
+            Model(title: "Europe movie", image: "Movie Card-5"),
         ],
         [
             Model(title: "Romace/Drama", image: "Movie Card-6"),

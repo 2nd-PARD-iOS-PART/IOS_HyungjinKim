@@ -26,11 +26,13 @@ class HeroHeaderUI: UIView {
         ])
     }
     
+
     private let heroImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.image = UIImage(named: "HeroImage")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
