@@ -9,7 +9,7 @@ import UIKit
 
 class SearchPage: UIViewController {
     var models: [PopularSearchModel] = []
-
+    
     private let discoverTable: UITableView = {
         let table = UITableView()
         table.register(MyTitleTableViewCell.self, forCellReuseIdentifier: MyTitleTableViewCell.identifier)
@@ -20,23 +20,29 @@ class SearchPage: UIViewController {
         let searchBar = UISearchBar()
         searchBar.placeholder = "Search for a movie or a TV show"
         searchBar.translatesAutoresizingMaskIntoConstraints = false
-        searchBar.backgroundColor = .red 
         return searchBar
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = .systemBackground
         
-        view.addSubview(searchBar)
+        // Creating a search controller
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "Search for a movie or a TV show"
+        
+        // Adding the search controller to the navigation item
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
         view.addSubview(discoverTable)
         discoverTable.delegate = self
         discoverTable.dataSource = self
         
         configure(with: PopularSearchModel.modelData)
         setupConstraints()
-
+        
         setupTableViewHeader()
     }
     
@@ -52,7 +58,7 @@ class SearchPage: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        discoverTable.frame = view.bounds
+                discoverTable.frame = view.bounds
     }
     
     func configure(with models: [PopularSearchModel]) {
@@ -60,21 +66,37 @@ class SearchPage: UIViewController {
         discoverTable.reloadData()
     }
     
-    //constraints for the search bar and the table.
     private func setupConstraints() {
-        NSLayoutConstraint.activate([
-            // Search Bar Constraints
-            searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            
-            // Discover Table Constraints
-            discoverTable.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
+        let discoverTableConstraints = [
+            discoverTable.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             discoverTable.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             discoverTable.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             discoverTable.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        ]
+        
+        discoverTable.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate(discoverTableConstraints)
     }
+    
+    //constraints for the search bar and the table.
+//    private func setupConstraints() {
+//        let searchBarConstraints = [
+//            searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+//            searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+//        ]
+//
+//        let discoverTableConstraints = [
+//            discoverTable.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
+//            discoverTable.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            discoverTable.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+//            discoverTable.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+//        ]
+//
+//        NSLayoutConstraint.activate(searchBarConstraints)
+//        NSLayoutConstraint.activate(discoverTableConstraints)
+//    }
+    
 }
 
 
