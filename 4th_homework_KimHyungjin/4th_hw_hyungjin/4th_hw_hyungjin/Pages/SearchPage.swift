@@ -78,7 +78,7 @@ class SearchPage: UIViewController {
         NSLayoutConstraint.activate(discoverTableConstraints)
     }
     
-    //constraints for the search bar and the table.
+//    constraints for the search bar and the table.
 //    private func setupConstraints() {
 //        let searchBarConstraints = [
 //            searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
