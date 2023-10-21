@@ -13,7 +13,7 @@ A Netflix clone built using Swift and UIKit to replicate the design and function
 ![Search Page](./screenshot/search.png)
 
 ### Download Page
-![Download Page](./screenshot/sownload.png)
+![Download Page](./screenshot/download.png)
 
 ## Features
 
