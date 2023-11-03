@@ -16,7 +16,7 @@ extension PopularSearchModel {
         PopularSearchModel(title: "The Irishman", image: "TheIrishman", year: "2019", description: "An old mobster reminisces about his life of crime.", numberOfSeasons: "None"),
         PopularSearchModel(title: "The Queen's Gambit", image: "TheQuessn's Gambit", year: "2020", description: "A chess prodigy battles addiction on her path to greatness.", numberOfSeasons: "1"),
         PopularSearchModel(title: "고요의 바다", image: "고요의바다", year: "2022", description: "Astronauts on a perilous mission find more than they bargained for.", numberOfSeasons: "1"),
-        PopularSearchModel(title: "기복순", image: "길복순", year: "2018", description: "A tale of luck and the unexpected twists of fate.", numberOfSeasons: "2"),
+        PopularSearchModel(title: "길복순", image: "길복순", year: "2018", description: "A tale of luck and the unexpected twists of fate.", numberOfSeasons: "2"),
         PopularSearchModel(title: "더글로리", image: "더글로리", year: "2023", description: "A story of triumph over adversity, set against the backdrop of sport.", numberOfSeasons: "None"),
         PopularSearchModel(title: "마스크걸", image: "마스크걸", year: "2024", description: "A superheroine's journey to find her identity behind the mask.", numberOfSeasons: "3"),
         PopularSearchModel(title: "무빙", image: "무빙", year: "2020", description: "A family on the run tries to find a place to call home.", numberOfSeasons: "None"),

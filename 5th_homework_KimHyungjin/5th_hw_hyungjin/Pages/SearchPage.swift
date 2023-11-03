@@ -104,4 +104,19 @@ extension SearchPage: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            // Deselect the row for better UX
+            tableView.deselectRow(at: indexPath, animated: true)
+
+            // Get the selected model
+            let selectedModel = models[indexPath.row]
+
+            // Initialize the detail view controller with the selected model
+            let detailViewController = MovieDetailViewController(model: selectedModel)
+
+            // Push the new view controller onto the stack
+            self.navigationController?.pushViewController(detailViewController, animated: true)
+        }
+    
 }
