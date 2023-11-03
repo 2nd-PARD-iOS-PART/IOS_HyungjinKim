@@ -25,6 +25,7 @@
 		CAC35ABB2AD0DD0800F7DF6B /* DownloadsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35ABA2AD0DD0800F7DF6B /* DownloadsPage.swift */; };
 		CAC35ABD2AD0DD1700F7DF6B /* MorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35ABC2AD0DD1700F7DF6B /* MorePage.swift */; };
 		CAC35AC02AD0F76400F7DF6B /* PopularSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35ABF2AD0F76400F7DF6B /* PopularSearchModel.swift */; };
+		CAFF0D3A2AF4BD8500FE51E0 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF0D392AF4BD8500FE51E0 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CAC35ABA2AD0DD0800F7DF6B /* DownloadsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsPage.swift; sourceTree = "<group>"; };
 		CAC35ABC2AD0DD1700F7DF6B /* MorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePage.swift; sourceTree = "<group>"; };
 		CAC35ABF2AD0F76400F7DF6B /* PopularSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchModel.swift; sourceTree = "<group>"; };
+		CAFF0D392AF4BD8500FE51E0 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				CAC35ABC2AD0DD1700F7DF6B /* MorePage.swift */,
 				CAC35AB62AD0DCE400F7DF6B /* SearchPage.swift */,
 				CAC35ABA2AD0DD0800F7DF6B /* DownloadsPage.swift */,
+				CAFF0D392AF4BD8500FE51E0 /* MovieDetailViewController.swift */,
 				CAC35AB82AD0DCF300F7DF6B /* ComingSoonPage.swift */,
 			);
 			path = Pages;
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC35AA92AD0D58700F7DF6B /* CollectionInTabelViewCell.swift in Sources */,
+				CAFF0D3A2AF4BD8500FE51E0 /* MovieDetailViewController.swift in Sources */,
 				CAC35AC02AD0F76400F7DF6B /* PopularSearchModel.swift in Sources */,
 				CAC35AAB2AD0D5C200F7DF6B /* MyCollectionViewCell.swift in Sources */,
 				CAC35AB92AD0DCF300F7DF6B /* ComingSoonPage.swift in Sources */,
