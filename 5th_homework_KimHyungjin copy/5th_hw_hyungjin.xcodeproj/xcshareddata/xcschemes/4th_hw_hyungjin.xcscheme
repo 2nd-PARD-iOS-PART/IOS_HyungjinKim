@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CAC35A742AD0D4CF00F7DF6B"
-               BuildableName = "6th_hw_hyungjin.app"
-               BlueprintName = "6th_hw_hyungjin"
-               ReferencedContainer = "container:6th_hw_hyungjin.xcodeproj">
+               BuildableName = "5th_hw_hyungjin.app"
+               BlueprintName = "5th_hw_hyungjin"
+               ReferencedContainer = "container:5th_hw_hyungjin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CAC35A742AD0D4CF00F7DF6B"
-            BuildableName = "6th_hw_hyungjin.app"
-            BlueprintName = "6th_hw_hyungjin"
-            ReferencedContainer = "container:6th_hw_hyungjin.xcodeproj">
+            BuildableName = "5th_hw_hyungjin.app"
+            BlueprintName = "5th_hw_hyungjin"
+            ReferencedContainer = "container:5th_hw_hyungjin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CAC35A742AD0D4CF00F7DF6B"
-            BuildableName = "6th_hw_hyungjin.app"
-            BlueprintName = "6th_hw_hyungjin"
-            ReferencedContainer = "container:6th_hw_hyungjin.xcodeproj">
+            BuildableName = "5th_hw_hyungjin.app"
+            BlueprintName = "5th_hw_hyungjin"
+            ReferencedContainer = "container:5th_hw_hyungjin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

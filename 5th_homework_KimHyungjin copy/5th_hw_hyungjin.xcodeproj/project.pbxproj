@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CA2A81DB2AE34EEF00D39DEB /* MyTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A81DA2AE34EEF00D39DEB /* MyTitleTableViewCell.swift */; };
+		CAA7D7152B01E49900625BCD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CAA7D7142B01E49900625BCD /* Realm */; };
+		CAA7D7172B01E49900625BCD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CAA7D7162B01E49900625BCD /* RealmSwift */; };
+		CAA7D7192B01E4AE00625BCD /* DownloadModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7D7182B01E4AE00625BCD /* DownloadModalViewController.swift */; };
+		CAA7D71B2B01E4D600625BCD /* DownloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7D71A2B01E4D600625BCD /* DownloadModel.swift */; };
 		CAC35A792AD0D4CF00F7DF6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35A782AD0D4CF00F7DF6B /* AppDelegate.swift */; };
 		CAC35A7B2AD0D4CF00F7DF6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35A7A2AD0D4CF00F7DF6B /* SceneDelegate.swift */; };
 		CAC35A7D2AD0D4CF00F7DF6B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC35A7C2AD0D4CF00F7DF6B /* HomePage.swift */; };
@@ -47,15 +51,17 @@
 
 /* Begin PBXFileReference section */
 		CA2A81DA2AE34EEF00D39DEB /* MyTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTitleTableViewCell.swift; sourceTree = "<group>"; };
-		CAC35A752AD0D4CF00F7DF6B /* 6th_hw_hyungjin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6th_hw_hyungjin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA7D7182B01E4AE00625BCD /* DownloadModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadModalViewController.swift; sourceTree = "<group>"; };
+		CAA7D71A2B01E4D600625BCD /* DownloadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadModel.swift; sourceTree = "<group>"; };
+		CAC35A752AD0D4CF00F7DF6B /* 5th_hw_hyungjin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5th_hw_hyungjin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC35A782AD0D4CF00F7DF6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC35A7A2AD0D4CF00F7DF6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CAC35A7C2AD0D4CF00F7DF6B /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		CAC35A812AD0D4D000F7DF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC35A862AD0D4D000F7DF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAC35A8B2AD0D4D000F7DF6B /* 6th_hw_hyungjinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6th_hw_hyungjinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC35A8B2AD0D4D000F7DF6B /* 5th_hw_hyungjinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 5th_hw_hyungjinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC35A8F2AD0D4D000F7DF6B /* _rd_redoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _rd_redoTests.swift; sourceTree = "<group>"; };
-		CAC35A952AD0D4D000F7DF6B /* 6th_hw_hyungjinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6th_hw_hyungjinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC35A952AD0D4D000F7DF6B /* 5th_hw_hyungjinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 5th_hw_hyungjinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC35A992AD0D4D000F7DF6B /* _rd_redoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _rd_redoUITests.swift; sourceTree = "<group>"; };
 		CAC35A9B2AD0D4D000F7DF6B /* _rd_redoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _rd_redoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAC35AA82AD0D58700F7DF6B /* CollectionInTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionInTabelViewCell.swift; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA7D7172B01E49900625BCD /* RealmSwift in Frameworks */,
+				CAA7D7152B01E49900625BCD /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +107,9 @@
 		CAC35A6C2AD0D4CF00F7DF6B = {
 			isa = PBXGroup;
 			children = (
-				CAC35A772AD0D4CF00F7DF6B /* 6th_hw_hyungjin */,
-				CAC35A8E2AD0D4D000F7DF6B /* 6th_hw_hyungjinTests */,
-				CAC35A982AD0D4D000F7DF6B /* 6th_hw_hyungjinUITests */,
+				CAC35A772AD0D4CF00F7DF6B /* 5th_hw_hyungjin */,
+				CAC35A8E2AD0D4D000F7DF6B /* 5th_hw_hyungjinTests */,
+				CAC35A982AD0D4D000F7DF6B /* 5th_hw_hyungjinUITests */,
 				CAC35A762AD0D4CF00F7DF6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,14 +117,14 @@
 		CAC35A762AD0D4CF00F7DF6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CAC35A752AD0D4CF00F7DF6B /* 6th_hw_hyungjin.app */,
-				CAC35A8B2AD0D4D000F7DF6B /* 6th_hw_hyungjinTests.xctest */,
-				CAC35A952AD0D4D000F7DF6B /* 6th_hw_hyungjinUITests.xctest */,
+				CAC35A752AD0D4CF00F7DF6B /* 5th_hw_hyungjin.app */,
+				CAC35A8B2AD0D4D000F7DF6B /* 5th_hw_hyungjinTests.xctest */,
+				CAC35A952AD0D4D000F7DF6B /* 5th_hw_hyungjinUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CAC35A772AD0D4CF00F7DF6B /* 6th_hw_hyungjin */ = {
+		CAC35A772AD0D4CF00F7DF6B /* 5th_hw_hyungjin */ = {
 			isa = PBXGroup;
 			children = (
 				CAC35A782AD0D4CF00F7DF6B /* AppDelegate.swift */,
@@ -124,6 +132,7 @@
 				CAC35AB52AD0DC5A00F7DF6B /* Data */,
 				CAC35AB42AD0DC4100F7DF6B /* Pages */,
 				CAC35AA82AD0D58700F7DF6B /* CollectionInTabelViewCell.swift */,
+				CAA7D7182B01E4AE00625BCD /* DownloadModalViewController.swift */,
 				CAFF0D392AF4BD8500FE51E0 /* MovieDetailViewController.swift */,
 				CAC35AB22AD0DA9200F7DF6B /* MainTapBar.swift */,
 				CAC35AB02AD0D98300F7DF6B /* HeroHeaderUI.swift */,
@@ -132,24 +141,24 @@
 				CAC35A812AD0D4D000F7DF6B /* Assets.xcassets */,
 				CAC35A862AD0D4D000F7DF6B /* Info.plist */,
 			);
-			path = 6th_hw_hyungjin;
+			path = 5th_hw_hyungjin;
 			sourceTree = "<group>";
 		};
-		CAC35A8E2AD0D4D000F7DF6B /* 6th_hw_hyungjinTests */ = {
+		CAC35A8E2AD0D4D000F7DF6B /* 5th_hw_hyungjinTests */ = {
 			isa = PBXGroup;
 			children = (
 				CAC35A8F2AD0D4D000F7DF6B /* _rd_redoTests.swift */,
 			);
-			path = 6th_hw_hyungjinTests;
+			path = 5th_hw_hyungjinTests;
 			sourceTree = "<group>";
 		};
-		CAC35A982AD0D4D000F7DF6B /* 6th_hw_hyungjinUITests */ = {
+		CAC35A982AD0D4D000F7DF6B /* 5th_hw_hyungjinUITests */ = {
 			isa = PBXGroup;
 			children = (
 				CAC35A992AD0D4D000F7DF6B /* _rd_redoUITests.swift */,
 				CAC35A9B2AD0D4D000F7DF6B /* _rd_redoUITestsLaunchTests.swift */,
 			);
-			path = 6th_hw_hyungjinUITests;
+			path = 5th_hw_hyungjinUITests;
 			sourceTree = "<group>";
 		};
 		CAC35AB42AD0DC4100F7DF6B /* Pages */ = {
@@ -169,6 +178,7 @@
 			children = (
 				CAC35AAC2AD0D5EF00F7DF6B /* Model.swift */,
 				CAC35ABF2AD0F76400F7DF6B /* PopularSearchModel.swift */,
+				CAA7D71A2B01E4D600625BCD /* DownloadModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -176,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAC35A742AD0D4CF00F7DF6B /* 6th_hw_hyungjin */ = {
+		CAC35A742AD0D4CF00F7DF6B /* 5th_hw_hyungjin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAC35A9F2AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "6th_hw_hyungjin" */;
+			buildConfigurationList = CAC35A9F2AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "5th_hw_hyungjin" */;
 			buildPhases = (
 				CAC35A712AD0D4CF00F7DF6B /* Sources */,
 				CAC35A722AD0D4CF00F7DF6B /* Frameworks */,
@@ -188,14 +198,18 @@
 			);
 			dependencies = (
 			);
-			name = 6th_hw_hyungjin;
+			name = 5th_hw_hyungjin;
+			packageProductDependencies = (
+				CAA7D7142B01E49900625BCD /* Realm */,
+				CAA7D7162B01E49900625BCD /* RealmSwift */,
+			);
 			productName = 3rd_redo;
-			productReference = CAC35A752AD0D4CF00F7DF6B /* 6th_hw_hyungjin.app */;
+			productReference = CAC35A752AD0D4CF00F7DF6B /* 5th_hw_hyungjin.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CAC35A8A2AD0D4D000F7DF6B /* 6th_hw_hyungjinTests */ = {
+		CAC35A8A2AD0D4D000F7DF6B /* 5th_hw_hyungjinTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAC35AA22AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "6th_hw_hyungjinTests" */;
+			buildConfigurationList = CAC35AA22AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "5th_hw_hyungjinTests" */;
 			buildPhases = (
 				CAC35A872AD0D4D000F7DF6B /* Sources */,
 				CAC35A882AD0D4D000F7DF6B /* Frameworks */,
@@ -206,14 +220,14 @@
 			dependencies = (
 				CAC35A8D2AD0D4D000F7DF6B /* PBXTargetDependency */,
 			);
-			name = 6th_hw_hyungjinTests;
+			name = 5th_hw_hyungjinTests;
 			productName = 3rd_redoTests;
-			productReference = CAC35A8B2AD0D4D000F7DF6B /* 6th_hw_hyungjinTests.xctest */;
+			productReference = CAC35A8B2AD0D4D000F7DF6B /* 5th_hw_hyungjinTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CAC35A942AD0D4D000F7DF6B /* 6th_hw_hyungjinUITests */ = {
+		CAC35A942AD0D4D000F7DF6B /* 5th_hw_hyungjinUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAC35AA52AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "6th_hw_hyungjinUITests" */;
+			buildConfigurationList = CAC35AA52AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "5th_hw_hyungjinUITests" */;
 			buildPhases = (
 				CAC35A912AD0D4D000F7DF6B /* Sources */,
 				CAC35A922AD0D4D000F7DF6B /* Frameworks */,
@@ -224,9 +238,9 @@
 			dependencies = (
 				CAC35A972AD0D4D000F7DF6B /* PBXTargetDependency */,
 			);
-			name = 6th_hw_hyungjinUITests;
+			name = 5th_hw_hyungjinUITests;
 			productName = 3rd_redoUITests;
-			productReference = CAC35A952AD0D4D000F7DF6B /* 6th_hw_hyungjinUITests.xctest */;
+			productReference = CAC35A952AD0D4D000F7DF6B /* 5th_hw_hyungjinUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +266,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CAC35A702AD0D4CF00F7DF6B /* Build configuration list for PBXProject "6th_hw_hyungjin" */;
+			buildConfigurationList = CAC35A702AD0D4CF00F7DF6B /* Build configuration list for PBXProject "5th_hw_hyungjin" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,13 +275,16 @@
 				Base,
 			);
 			mainGroup = CAC35A6C2AD0D4CF00F7DF6B;
+			packageReferences = (
+				CAA7D7132B01E49900625BCD /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = CAC35A762AD0D4CF00F7DF6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CAC35A742AD0D4CF00F7DF6B /* 6th_hw_hyungjin */,
-				CAC35A8A2AD0D4D000F7DF6B /* 6th_hw_hyungjinTests */,
-				CAC35A942AD0D4D000F7DF6B /* 6th_hw_hyungjinUITests */,
+				CAC35A742AD0D4CF00F7DF6B /* 5th_hw_hyungjin */,
+				CAC35A8A2AD0D4D000F7DF6B /* 5th_hw_hyungjinTests */,
+				CAC35A942AD0D4D000F7DF6B /* 5th_hw_hyungjinUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,11 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA7D7192B01E4AE00625BCD /* DownloadModalViewController.swift in Sources */,
 				CAC35AA92AD0D58700F7DF6B /* CollectionInTabelViewCell.swift in Sources */,
 				CAFF0D3A2AF4BD8500FE51E0 /* MovieDetailViewController.swift in Sources */,
 				CAC35AC02AD0F76400F7DF6B /* PopularSearchModel.swift in Sources */,
 				CAC35AAB2AD0D5C200F7DF6B /* MyCollectionViewCell.swift in Sources */,
 				CAC35AB92AD0DCF300F7DF6B /* ComingSoonPage.swift in Sources */,
+				CAA7D71B2B01E4D600625BCD /* DownloadModel.swift in Sources */,
 				CAC35AB32AD0DA9200F7DF6B /* MainTapBar.swift in Sources */,
 				CAC35AB12AD0D98300F7DF6B /* HeroHeaderUI.swift in Sources */,
 				CAC35ABD2AD0DD1700F7DF6B /* MorePage.swift in Sources */,
@@ -342,12 +361,12 @@
 /* Begin PBXTargetDependency section */
 		CAC35A8D2AD0D4D000F7DF6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAC35A742AD0D4CF00F7DF6B /* 6th_hw_hyungjin */;
+			target = CAC35A742AD0D4CF00F7DF6B /* 5th_hw_hyungjin */;
 			targetProxy = CAC35A8C2AD0D4D000F7DF6B /* PBXContainerItemProxy */;
 		};
 		CAC35A972AD0D4D000F7DF6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAC35A742AD0D4CF00F7DF6B /* 6th_hw_hyungjin */;
+			target = CAC35A742AD0D4CF00F7DF6B /* 5th_hw_hyungjin */;
 			targetProxy = CAC35A962AD0D4D000F7DF6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -477,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 6th_hw_hyungjin/Info.plist;
+				INFOPLIST_FILE = 5th_hw_hyungjin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -503,7 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 6th_hw_hyungjin/Info.plist;
+				INFOPLIST_FILE = 5th_hw_hyungjin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -536,7 +555,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6th_hw_hyungjin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/6th_hw_hyungjin";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5th_hw_hyungjin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/5th_hw_hyungjin";
 			};
 			name = Debug;
 		};
@@ -555,7 +574,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6th_hw_hyungjin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/6th_hw_hyungjin";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5th_hw_hyungjin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/5th_hw_hyungjin";
 			};
 			name = Release;
 		};
@@ -596,7 +615,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CAC35A702AD0D4CF00F7DF6B /* Build configuration list for PBXProject "6th_hw_hyungjin" */ = {
+		CAC35A702AD0D4CF00F7DF6B /* Build configuration list for PBXProject "5th_hw_hyungjin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAC35A9D2AD0D4D000F7DF6B /* Debug */,
@@ -605,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAC35A9F2AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "6th_hw_hyungjin" */ = {
+		CAC35A9F2AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "5th_hw_hyungjin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAC35AA02AD0D4D000F7DF6B /* Debug */,
@@ -614,7 +633,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAC35AA22AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "6th_hw_hyungjinTests" */ = {
+		CAC35AA22AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "5th_hw_hyungjinTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAC35AA32AD0D4D000F7DF6B /* Debug */,
@@ -623,7 +642,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAC35AA52AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "6th_hw_hyungjinUITests" */ = {
+		CAC35AA52AD0D4D000F7DF6B /* Build configuration list for PBXNativeTarget "5th_hw_hyungjinUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAC35AA62AD0D4D000F7DF6B /* Debug */,
@@ -633,6 +652,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAA7D7132B01E49900625BCD /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAA7D7142B01E49900625BCD /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA7D7132B01E49900625BCD /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		CAA7D7162B01E49900625BCD /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAA7D7132B01E49900625BCD /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAC35A6D2AD0D4CF00F7DF6B /* Project object */;
 }

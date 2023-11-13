@@ -15,6 +15,8 @@ class DownloadsPage: UIViewController {
         view.addSubview(downloadText)
         view.addSubview(downloadButton)
         configureConstraints()
+        downloadButton.addTarget(self, action: #selector(openNavigation), for: .touchUpInside)
+
     }
     
     private let downloadImage: UIImageView = {
@@ -72,6 +74,11 @@ class DownloadsPage: UIViewController {
         NSLayoutConstraint.activate(downloadTextConstraints)
         NSLayoutConstraint.activate(downloadImageConstraints)
 
+    }
+    
+    @objc func openNavigation() {
+        let secondVC = DownloadModalViewController()
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
 
 }
