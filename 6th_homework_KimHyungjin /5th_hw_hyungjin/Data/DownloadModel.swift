@@ -8,7 +8,9 @@ import UIKit
 import RealmSwift
 
 class DownloadModel: Object {
-    @objc dynamic var name: String = ""
-    @objc dynamic var age: Int = 0
-    @objc dynamic var part: String = ""
+    @Persisted var title: String = ""
+    @Persisted var movieDescription: String = ""
+    @Persisted var imageData: Data?
 }
+
+

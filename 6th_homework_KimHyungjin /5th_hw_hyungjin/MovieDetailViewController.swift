@@ -1,6 +1,7 @@
 import UIKit
 
 class MovieDetailViewController: UIViewController {
+    
     private let model: PopularSearchModel
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
